@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+{% block content%}
+<div class="card">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADYCAMAAADF2h8TAAAArlBMVEX////U1dddXl7+4bj+2KwxXndEbIbQ1djX2Nr8/P3f4OHk5eb09fXq6uvs7e739/jCw8Our6+Ghob+4sFnaGhxcnJ7fHz/8Nz/9equoIuamprWupnWwKKZjHvq0a2um4WkpKT/+/ZafI+4ubmQkJDMspTCqo97d2+Ff3X+6cr+7NNQdImDmqert79xbmm4qJHqyaLQ2uFzkaRnhpuhsLmZj4C5yNKntL7+69CTp7T0xrkGAAAIQUlEQVR4nO2daXfaOhBATViMjQ0k0JRsTULalCykKWn6yv//Y8+2vMiLrJFkoTHH91NLgo8uM9KMLNNaVkdHR0dHR0dHR0dHR0dHR0dHRwdm3Pnd2fkJ4ezsdO6aHlCjzC+XJyXOHo5E0q+yI3y5802PThn/kmUXx3FueoRqnDKjl4WxxYruOVcvUhybHqgkc374Yr63cS56nNmXY9m+PAWmZ8qlZ3rEYpyK6QWct8lQNHwRy/YUfvHwtcpw/EXOLzBsQ5b632X1TtowDz1A61LHnWkBDvDSzgJ1UzOXnnwZX0xLsGlCLwBpS6M69zLOTatU4Yq0nTzQFUP/oZncTHgwLZTDf5Bpymr5btopxZ1fNhs7Ap5J+KDBLsS0V4aO+KESHGvxw1TqVfpqJmemrSi8pqo7zalpKxodSYqr0Evu3WvANAVDmmzSItA122fHLug13audYbtt4TUdQ2w3ZtyG/XBVQqv5SXiC7MaMjlKIKoRN1Ym3T+ovmE7TmtlSLC/636i/IqoVXkN6AdQLd6a1Mugp+OPxp7xev0+9GdEknFMjvRoMrm5E9X4+9mM2lLNprQy62x6EvIuEcfl53U+5oH5gWiuDElwOYt4fbyAbxTfaLuAXdsHNgOLq101dJN8+f+XtAq6xC94Milz9uL3ZbPJqy83nxfW3olzIN+yCtyXBlPergOuAKrEU7II/2IIRtXKFOmFaK4MSvFIV3GAUpAo9x48vmNUJRIU+2w0ulQWzOoHnAMay0kFtlAWzOoHp3mi63y1XCVHBrE5g2vHeAaoEUDCrE5juyvSgVQIgmNQJPEeEIdAqARBM6sSdaSeK+6dkg8TzAwgmdQLR8cT9YvAIrBIAwbhOvK1Ma2UsgoEvYVUCIBjXiYv+vWmvhOdw4DewKgEQjOvEt/6TabGEaODvsCoBECR14jP4A5IkXZGR34CqBEQwqhPhnuqfaTXC8yALIbdKQAQ3cQD7fdNqhEU89MfbW36GQgSvLy4uyG4fR44u+FZighlHL/jVtFvE0Qv+0yeII0W/6hPE0cvcaxNcmFaLEZqEIoI4pmDayjQviCNDLbFlpoUBtISSFO6HZjNhRTvexgUx+QV87TcruMBRAmlWK9BiA4ndaoVmecnTlKBpDyadYNsFIWspQBBR/Stw9IKQfQVAEOkSasH2FXw/LHuIKgA5yhd8Nm1RAyBH25yhoBzl+uEtEiFP6oL4mlAafjvK88O8xIRwlxmeIN4iSOCGsOUB5Iew1TMwhLeQtj2A6WmanCD+AHJDWOuH5MSTQ/06UytoeuhAaqt92xM0pDZJW5+gIXVJyvZrwwqaULOSsgUx7yJKsKdh6ydgDLOhYflh70GLME8rGH6Yt/HVsAyPxY9peDR+FmOlOYL1JaPqHlRZ76lV9SHPfTmIrV8+C/AFTY9QkU6wE0ROJ9gJ4qa8uT82wVJDWvRreZ23rNWiTrD1eiF5xaPTC6EVj1AvJFM8Sr2QRJHoPbd4i+R4vjup+gFRZOp57mSK6WvJVYRu417ItPLnoSIrejPyxrHrI7WcTSdkiIRZ9W+tFv+qk9Oh3xzE0tE4VHFmU5ceXzRGxq9Wh9ay3ML7e2Msko43KcpFVE5Dy3v5Xfn6pOoSQSRNp6szLX3yKZVj2w93VS/7zKuMDTrW2YVDq8iw38PhqCKE07rrmHKcVWcmnWCl93gvgWA5hDPelXpj/9Dz0asNXkzpg98PA8FSCB2uX8jkkIogvXKSBgkaChZC6MAudkBF8IgKSeqNiODob+5l8NV6Y1aNaZYpKKMIuX8hdDeMBdf0qxMbfrmee4AgVlcsFlRDE64wRJAO4VTELwgio0My5Ud95M7YfkkEXzNrW0xQu6EnNhyqoQmmWmQY+O3sZDLNbFFBZg/YDLAVPYdHfTL2KFpFbXucXE7YrzCvm4bdUjEhtSL+ZKIIvgZhIyF0xQNY3SE1hUQA45witWAbCX7YcQgntoygzhDW94wspukb/5A5aJMQ+nJ+PY3/3Bq8JucG5CSRf40LfRTCqS0pWL1PaYKZlF+QpMkHsyaC/4VmUX7KCVZvNRtAsAaWievg3k6Ru46uZUZmiaGxY8EPVUFNOeoo+kWLaCj4oiqoKUfl1lCK16RVU/TTtY7KraEUu0RwqyjIuimpiKpfL22296qCWmq9cJ9dIt0u7RT99HTcEn1onm0quFYV7OkQVJ6C+1RwpCyoo1Co+vV2meBfRT8dk1B9Cq4zwT+qghomofIUJGsMEdyrCmqYhMpTcE4Jfqj6aaiEqo1otBlMBF+UBZu/RaocwVdKMFpllK7W/DIKv5/N4IMW3KILoLrhiBbcqwlquoevtOG1h7TgTklQ2xmFiuE2J7hW8BtrPA9V2BLuc4IjeUG9N+9Fjpby7PKCW9nr6D5g4h83M1jnBfeSl9F/Ciq7mA7zgq9yVznIEajUUrMtCH7IXETn8kLjSaTpviA4kvA7xPkuQSJNX4uCc+FLHOaEPkZ4NV0XBf8TvICr/fA6j2gQh0VBwWXUwH94KhTEeUlwJ6J36PARHIHldFsSfIG/+UDPx1QAfOKpR60xqSB8GT3oQ1xFoHlajiC0EJrJzgzHhykW6+ALrEy4pp+IhSsWelFQlcCgFwJSnOcEIWsoFr0IwFzM31Xj/rrxx7WLeNyi8ZEJ8naDh3/CF4LDCaOdPC/K2yuhys089Q9yJ2f0tTdkXCRfl2BS57gjgn/ba0dwyl+EiQmfume12eOJ1wq7mIpv+5AkrWxh0H1ZCUb4ZbRCt7ofFlqYcQu+VMfB8ab+xE3iuf4Tx8x1fd9rVVJ2dHR0dBwh/wOHZ8zNCDkoHQAAAABJRU5ErkJggg==" 
+        alt="user">
+        <h2>{{session['firstname']}}</h2>
+        <p class="title">Details</p>
+        <div style="margin: 24px 10px;" class="edit">
+             <form action="/modify" method="POST">
+                <div class="col-3">
+                <label for="fn">First Name : </label>
+                 <input type="text" id="fn" name ="fn"  value="{{session['firstname']}}" required/>
+                </div>
+                 <div class="col-3">
+                 <label for="ln">Last Name : </label>
+                 <input type="text" name ="ln" value="{{session['lastname']}}" required/>
+                </div>
+                <button type="submit" class="btn">Update</button>
+             </form>
+        </div>
+      </div>
+            
+{% endblock %}

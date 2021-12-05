@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css') }}">
+</head>
+<body>
+   <div class="world">
+    <div class="welcome">
+        <img src="{{ url_for('static', filename='1.png') }}">
+    </div>
+<div class="loginbox">
+    <h1>Login</h1>
+    <div class="flash">
+        {% with messages = get_flashed_messages() %}     <!-- declare a variable called messages -->
+        {% if messages %}                            <!-- check if there are any messages -->
+            {% for message in messages %}            <!-- loop through the messages -->
+                <p>{{message | safe}}</p>                   <!-- display each message in a paragraph tag -->
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+    </div>
+        <div>
+            <form action="/login" method="POST">
+                    <div class="col-3 input-effect">
+                    <input type="text" id="eeemail" name="email" class="effect" required autocomplete="off" >
+                    <label>Email</label>
+                    <span class="focus-border">
+                        <i></i>
+                    </span>
+                    </div>
+                <div class="col-3 input-effect">
+                    <input type="password" id="ppword" name="password"  class="effect" required autocomplete="off">
+                    <label>Password</label>
+                    <span class="focus-border">
+                        <i></i>
+                    </span>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+            <h4>dont have account? <a href="/signup">create account</a></h4>
+        </div>
+</div>
+</div>
+</body>
+</html>
